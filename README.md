@@ -17,7 +17,7 @@
     + Cau truc js quen thuoc
     + Setup don gian
     + Xay dung tren cau truc giong module goc
-    + Test bat dong bo, de su ly
+    + Co kha nang test bat dong bo, de su ly
     + Thong bao loi ro rang
     ...
     - Setup : don gian
@@ -35,6 +35,14 @@
     + mock hoisting
 - Built-in matchers library
 - Watch mode 
-- Jest-extend : chi tiet, cu the, ro dang, de su dung
+- Jest-extend, extended tu thu vien goc la Jest : chi tiet, cu the, ro dang, de su dung
 - Cac packages trong Jest/Jest-extend -> 
+    + beforeAll
+    + afterAll
+    + beforeEach
+    + afterEach
+    ...
+    + toBeEmpty()
+    + toBeString()
+    ...
 - Demo apply jest vao Project Grove-core-backend
