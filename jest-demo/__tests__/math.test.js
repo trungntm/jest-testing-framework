@@ -177,3 +177,38 @@ describe('Test Callbacks', () => {
   
 //     console.log('describe outer-c');
 // });
+
+
+/* JEST-EXTENDED */
+describe("Test Jest-extened", () => {
+  test('passes when using an asymmetrical matcher', () => {
+    expect([]).toEqual(expect.toBeArray());
+  });
+})
+
+/* TEST JEST-CHAIN */
+describe("Test Jest-Chain", () => {
+  test('add 1 and 1', () => {
+    expect(1 + 1)
+      .toBe(2)
+      .toBeGreaterThan(1)
+      .toBeLessThan(3);
+  });
+
+  test("Test with Jest-extended", () => {
+    expect([1, 2, 3])
+      .toBeArray()
+      .toBeArrayOfSize(3)
+      .toEqual([1, 2, 3])
+      .toIncludeAnyMembers([1, 2]);
+  })
+  test('Compares String', () => {
+    expect('hello world')
+      .toBeString()
+      .toEqualCaseInsensitive('HELLO WORLD')
+      .toStartWith('hello')
+      .toEndWith('world')
+      .not.toInclude('!')
+      .toBe('hello world');
+  })
+})
